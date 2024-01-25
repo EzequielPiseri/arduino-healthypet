@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('ROemY8ntc4sEBwfTc')
+    </script>
+</head>
+
+<body>
+
+    <header class="header" id="inicio">
+        <img class="hamburguer" src="img/hamburguesa.svg" alt="">
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicio">Materiales y Pasos</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#expertos">Los Expertos</a>
+            <a href="#footer">Contacto</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">Healthy Pet</h1>
+            <p class="copy">En búsqueda de la salud animal y la prevención, TODO con un arnés y un arduino.</p>
+        </div>
+
+    </header>
+    <main>
+        <section class="services contenedor" id="servicio">
+            <h2 class="subtitulo">Materiales y Pasos</h2>
+            <div class="contenedor-servicio">
+                <img src="img/checklist.svg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>Soldaduras en la plaqueta</h3>
+                        <p> Primero, soldamos los cabes junto a los sensores y los sócalos a las pistas de la placa
+                            soldable.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>Cableado y conexiones de sensores</h3>
+                        <p> Luego, realizamos todas la conexiones al Arduino NANO, como las SDA, SCL, Positivo,
+                            Negativo, etc.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>Armado del arnés</h3>
+                        <p> Por último, acoplamos todo al arnés para que podamos ubicarlo en nuestra mascota,
+                            posicionamos sensores, y listo!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="galeria">
+            <div class="contenedor">
+                <h2 class="subtitulo">Galeria</h2>
+                <div class="contenedor-galeria">
+                    <img src="img/codigo.jpg" class="img-galeria" alt="Hola">
+                    <img src="img/fritz.jpg" class="img-galeria" alt="">
+                    <img src="img/mpv.jpg" class="img-galeria" alt="">
+                    <img src="img/3d.jpg" class="img-galeria" alt="">
+                    <img src="img/final.jpg" class="img-galeria" alt="">
+                    <img src="img/gatuno.jpg" class="img-galeria" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="imagen-light">
+            <img src="img/close.svg" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </div>
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitulo">Los Expertos:</h2>
+            <section class="experts">
+                <div class="cont-expert">
+                    <img src="img/yo.jpg" alt="">
+                    <h3 class="n-expert">Ezequiel Piseri</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/juan.jpg" alt="">
+                    <h3 class="n-expert">Juan Marull</h3>
+                </div>
+
+            </section>
+        </section>
+
+
+        <!-- Arranca la sección del formulario -->
+        <section id="ayuda">
+            <h4 class="escribe">Necesitas ayuda? Escribeme aqui.</h4>
+            <div class="formulario">
+
+                <form id="form">
+                    <!-- Field es la combinacion entre la etiqueta y el campo -->
+                    <div class="field">
+                        <label for="from_name">Nombre</label>
+                        <input type="text" name="from_name" id="from_name">
+                    </div>
+                    <div class="field">
+                        <label for="message">Tu mensaje</label>
+                        <input type="text" name="message" id="message">
+                    </div>
+                    <div class="field">
+                        <label for="email_id">Tu e-mail</label>
+                        <input type="text" name="email_id" id="email_id">
+                    </div>
+
+                    <div class="Enviar">
+                        <input type="submit" id="button" value="Enviar correo">
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer id="footer">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">5to 1ra 2043</h2>
+                <p>Collar inteligente para mascotas</p>
+            </div>
+            <div class="social-media">
+                <a href="mailto:exequielsoftwares@gmail.com" class="social-media-icon">
+                    <i class='bx bx-envelope'></i>
+                </a>
+                <a href="https://wa.me/5493416163486" class="social-media-icon">
+                    <i class='bx bxl-whatsapp'></i>
+                </a>
+                <a href="https://instagram.com/eze_piseri" class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+
+    <script src="js/form.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
+
+</html>
